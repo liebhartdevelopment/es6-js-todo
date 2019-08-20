@@ -1,5 +1,6 @@
 class ToDoClass {
   constructor() {
+    debugger;
     this.tasks = JSON.parse(localStorage.getItem("TASKS"));
     if (!this.tasks) {
       this.tasks = [

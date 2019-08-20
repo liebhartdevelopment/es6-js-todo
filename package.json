@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "babel src -d dist --presets=es2015 -ws",
+    "watch": "concurrently \"npm run serve\" \"babel src -d dist --presets=es2015 -ws\"",
     "build": "rm -rf dist && babel src -d dist --presets=es2015",
     "serve": "http-server",
     "babel": "babel src -d dist --presets=es2015"

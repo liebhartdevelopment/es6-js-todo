@@ -8,6 +8,7 @@ var ToDoClass = function () {
   function ToDoClass() {
     _classCallCheck(this, ToDoClass);
 
+    debugger;
     this.tasks = JSON.parse(localStorage.getItem("TASKS"));
     if (!this.tasks) {
       this.tasks = [{ task: "Take cat to vet", isComplete: false }, { task: "Do homework", isComplete: false }, { task: "Get to work", isComplete: true }];
@@ -108,3 +109,4 @@ var toDo = void 0;
 window.addEventListener("load", function () {
   toDo = new ToDoClass();
 });
+//# sourceMappingURL=scripts.js.map
